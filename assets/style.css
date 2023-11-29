@@ -1,15 +1,17 @@
 /* Genel Stil */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #F4F5FA;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background-color: #FFE073;
   color: white;
   padding: 20px;
 }
@@ -32,7 +34,8 @@ body {
 
 .logo ul li a {
   text-decoration: none;
-  color: white;
+  color: #033A5B;
+  font-weight: bold;
 }
 
 .banner {
@@ -42,10 +45,11 @@ body {
 }
 
 .banner-image {
-  width: 300px; /* Örnek bir genişlik */
+  width: 500px; /* Örnek bir genişlik */
   height: auto;
   margin-right: 20px; /* Yazı ile arasındaki boşluk */
   flex-shrink: 0; /* Resmi küçültüp sola yaslamak için */
+  border-radius: 16px;
 }
 
 .banner-content {
@@ -62,12 +66,16 @@ body {
 
 .featured-places {
   padding: 20px;
-  background-color: #f9f9f9;
 }
 
 .featured-places h2 {
   text-align: center;
   margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #033A5B;
+  
 }
 
 .place {
@@ -77,9 +85,10 @@ body {
 }
 
 .place-image {
-  width: 200px;
+  width: 500px;
   height: auto;
   margin-right: 20px;
+  border-radius: 16px;
 }
 
 .place-info h3 {
@@ -90,7 +99,6 @@ body {
 
 .activities {
   padding: 50px 20px;
-  background-color: #f9f9f9;
   text-align: center;
   flex-wrap: wrap;
   justify-content: center;
