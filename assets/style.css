@@ -1,64 +1,135 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  .header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 20px;
-    background-color: #FFE073;
-    color: white;
-  }
-
-  img {
-    width: 10%;
-    height: 10%;
-    margin-right: auto;
-
-
-  }
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-
-  nav ul {
-
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  nav ul li {
-    margin-right: 20px;
-  }
-
-  nav ul li a {
-    text-decoration: none;
-    color: #033A5B;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 10px;
-  }
-
- .banner-image {
-  width: 50%;
-  height: 50%;
-
+/* Genel Stil */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
- .icerik {
-    margin-left: auto;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
 
- }
+.header img {
+  width: 80px; /* Logo boyutunu ayarlayabilirsiniz */
+  height: auto;
+}
 
- .banner {
-    background-image: url("tarsus.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 50px 50px 50px;
-  }
+.logo ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.logo ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.logo ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.banner-image {
+  width: 300px; /* Örnek bir genişlik */
+  height: auto;
+  margin-right: 20px; /* Yazı ile arasındaki boşluk */
+  flex-shrink: 0; /* Resmi küçültüp sola yaslamak için */
+}
+
+.banner-content {
+  flex-grow: 1; /* Yazıları sağa kaydırmak için */
+}
+
+.banner-content h1,
+.banner-content p {
+  margin-bottom: 10px; /* Yazılar arasındaki boşluk */
+}
+
+
+/* ... (önceki CSS kodları) */
+
+.featured-places {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.featured-places h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.place {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.place-image {
+  width: 200px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.place-info h3 {
+  margin-bottom: 10px;
+}
+
+/* ... (önceki CSS kodları) */
+
+.activities {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.activities h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.activity {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.activity:hover {
+  transform: translateY(-5px);
+}
+
+.activity-info {
+  padding: 20px;
+}
+
+.activity-info h3 {
+  margin-bottom: 10px;
+}
+
+.activity-image {
+  width: 120px;
+}
+
+
+
+
+
