@@ -7,6 +7,52 @@ body {
   background-color: #F4F5FA;
 }
 
+
+footer {
+  background-color: #FFE073;
+  padding: 70px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 100px;
+}
+
+.description {
+  flex-grow: 1;
+  padding: 0 20px;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #033A5B;
+}
+
+.menu a:hover {
+  border-bottom: 2px solid #033A5B;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -66,6 +112,8 @@ body {
 
 .featured-places {
   padding: 20px;
+  font-size: larger;
+  text-align: justify;
 }
 
 .featured-places h2 {
@@ -102,6 +150,7 @@ body {
   text-align: center;
   flex-wrap: wrap;
   justify-content: center;
+  
 }
 
 .activities h2 {
@@ -121,6 +170,19 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
+.activity-iki {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  margin-left: 100px;
+}
+
 .activity:hover {
   transform: translateY(-5px);
 }
@@ -137,7 +199,16 @@ body {
   width: 120px;
 }
 
+.info {
+  margin-bottom: 10px;
+  text-align: center;
+  padding-top: 30px;
+}
 
-
+/* .info img {
+  width: 450px;
+  height: 300px;
+} 
+*/ 
 
 
