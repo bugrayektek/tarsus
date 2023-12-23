@@ -1,237 +1,239 @@
 /* Genel Stil */
-
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #F4F5FA;
+  background-color: #f4f5fa;
+  line-height: 1.6;
 }
 
+/* HEADER */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #FFE073;
+  background-color: #007bff;
   color: white;
   padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-
-/* HEADER */
-
-
 .header img {
-  width: 80px; /* Logo boyutunu ayarlayabilirsin */
+  width: 80px;
   height: auto;
 }
 
-.logo ul {
+.header ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
 }
 
-.logo ul li {
-  display: inline;
+.header ul li {
   margin-right: 20px;
 }
 
-.logo ul li a {
+.header ul li a {
   text-decoration: none;
-  color: #033A5B;
+  color: white;
   font-weight: bold;
+  transition: color 0.3s;
 }
 
-
-/* HEADER */
-
+.header ul li a:hover {
+  color: #ffd700;
+}
 
 /* SECTION */
-
-
 .banner {
   display: flex;
   align-items: center;
-  padding: 20px;
+  justify-content: center;
+  padding: 40px;
+  background-color: white;
 }
 
 .banner-image {
-  width: 400px; /* Örnek bir genişlik */
-  height: auto;
-  margin-right: 20px; /* Yazı ile arasındaki boşluk */
-  flex-shrink: 0; /* Resmi küçültüp sola yaslamak için */
-  border-radius: 16px;
-  margin-left: 20px;
+  width: 50%;
+  margin-right: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .banner-content {
-  flex-grow: 1; /* Yazıları sağa kaydırmak için */
-  text-align: justify;
-  font-size: larger;
+  flex: 1;
+  text-align: left;
 }
 
 .banner-content h1,
 .banner-content p {
-  margin-bottom: 10px; /* Yazılar arasındaki boşluk */
-}
-
-
-/* SECTION */
-
-
-/* ... (önceki CSS kodları) */
-
-.featured-places {
-  padding: 20px;
-  font-size: larger;
-  text-align: justify;
-}
-
-.featured-places h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  font-weight: bold;
-  font-size: 35px;
-  font-family: 'Times New Roman', Times, serif;
-  color: #033A5B;
-  
-}
-
-.place {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.place-image {
-  width: 500px;
-  height: auto;
-  margin-right: 20px;
-  border-radius: 16px;
-}
-
-.place-info h3 {
   margin-bottom: 10px;
 }
 
-/* ... (önceki CSS kodları) */
-
+.featured-places,
 .activities {
-  padding: 50px 20px;
-  text-align: center;
-  display: flex;
-  
+  padding: 40px 20px;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.featured-places h2,
 .activities h2 {
   text-align: center;
   margin-bottom: 30px;
+  color: #007bff;
 }
 
+.place,
 .activity {
   display: flex;
   align-items: center;
-  width: 500px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 20px;
-  overflow: hidden;
+  margin-bottom: 20px;
   transition: transform 0.3s ease-in-out;
 }
 
+.place:hover,
 .activity:hover {
   transform: translateY(-5px);
 }
 
-.activity-info {
-  padding: 20px;
-}
-
-.activity-info h3 {
-  margin-bottom: 10px;
-}
-
+.place-image,
 .activity-image {
   width: 200px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.info {
+.activity {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.activity-info,
+.place-info {
+  flex: 1;
+}
+
+.activity-info h3,
+.place-info h3 {
   margin-bottom: 10px;
-  text-align: center;
-  padding-top: 30px;
-}
-
-
-
- /* FOOTER */
-
-
-footer {
-  background-color: #FFE073;
-  padding: 70px 0;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo img {
-  max-width: 100px;
-}
-
-.description {
-  flex-grow: 1;
-  padding: 0 20px;
-}
-
-.menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: right;
-}
-
-.menu li {
-  margin-left: 20px;
-}
-
-.menu a {
-  text-decoration: none;
-  color: #033A5B;
-}
-
-.menu a:hover {
-  border-bottom: 2px solid #033A5B;
+  color: #007bff;
 }
 
 /* FOOTER */
+/* FOOTER */
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-between; /* İçeriği sağa ve sola yasla */
+  align-items: flex-start; /* İçeriği üstte hizala */
+  padding: 20px 40px; /* Kenarlardan boşluk */
+  background-color: #007bff;
+  color: white;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
 
-.highlight {
-  background-color: gainsboro;
-  padding: 5px;
-  border-radius: 4px;
-} 
+.footer-left,
+.footer-right {
+  width: 50%; /* Her iki taraf için yarım genişlik */
+}
 
-.list-item {
+.footer-left {
+  display: flex;
+  flex-direction: column; /* İçerikleri dikey hizala */
+  margin-left: 100px;
+}
+
+.footer-left img {
+  width: 20%; /* Logo boyutu */
+  margin-bottom: 10px; /* Logo ve metin arasında boşluk */
+}
+
+.footer-left p {
+  margin: 0; /* Metinde fazladan boşluk bırakma */
+  color: white;
+  font-size: 0.9em; /* Metin boyutunu azalt */
+  width: 50%; /* Metin genişliği */
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column; /* İçerikleri dikey hizala */
+  align-items: flex-end; /* Sağa yasla */
+  margin-right: 100px;
+}
+
+.footer-right .menu {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Menü etrafında boşluk bırakma */
+  margin-top: 10px;
+}
+
+.footer-right .menu li {
+  margin-bottom: 8px; /* Menü öğeleri arasında boşluk */
+}
+
+.footer-right .menu li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.footer-right .menu li a:hover {
+  color: #ffd700; /* Hover rengi */
+}
+
+/* Galeri */
+
+.gallery {
+  text-align: center;
+  padding: 20px;
+}
+
+.gallery h1 {
+  color: #007bff;
   margin-bottom: 20px;
 }
 
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.gallery-item {
+  width: calc(33.333% - 10px); /* Üç sütunlu bir düzen */
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
 
 /* YÖRESEL */
-
 .dish {
+  background-color: white;
   margin-bottom: 40px;
   padding: 20px;
-  border: 1px solid #ddd;
   border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -247,37 +249,44 @@ footer {
 }
 
 .dish h3 {
-  color: #e44d26;
+  color: #007bff;
 }
 
 .dish p {
   color: #555;
 }
 
-/* YÖRESEL */
-
 #section {
   max-width: 800px;
   margin: 20px auto;
-  background-color: #fff;
+  background-color: white;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #section h2 {
-    color: #333;
-    text-align: center;
+  color: #007bff;
+  text-align: center;
 }
 
 #section p {
-  line-height: 1.6;
   color: #555;
 }
 
 #section img {
-  max-width: 150%;
+  width: 100%;
   height: auto;
   border-radius: 8px;
   margin-top: 10px;
+}
+
+.highlight {
+  background-color: #ffd700;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.list-item {
+  margin-bottom: 20px;
 }
